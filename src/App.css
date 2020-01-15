@@ -1,0 +1,60 @@
+/* @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap'); */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: sans-serif;
+  background-color: rgb(104, 104, 107);
+  font-size: 16px;
+  color: #eee;
+}
+.container {
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 500px;
+  text-align: center;
+}
+input {
+  border: none;
+  border-radius: 15px;
+  padding: 8px 15px;
+  margin: 5px;
+  outline: none;
+  color: #222;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input[type='submit'] {
+  cursor: pointer;
+}
+.todoContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(244, 244, 244, 0.2);
+  list-style-type: none;
+  color: #fff;
+  text-align: left;
+}
+.todoItem {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.todoItem:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.todoItem .completed {
+  text-decoration: line-through;
+}
+.todoItem .todoText {
+  flex-grow: 1;
+}
+.todoItem .deleteIcon {
+  padding: 2px 10px;
+  background-color: #e77;
+}
